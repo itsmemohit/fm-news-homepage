@@ -1,272 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
 * {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 img {
-    max-width: 100%;
-    width: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style-type: none;
 }
 
-p{
-    line-height: 1.8;
-    color: hsl(236, 13%, 42%);
+p {
+  line-height: 1.8;
+  color: hsl(236, 13%, 42%);
 }
 
-body{
-    font-size: 15px;
-    max-width: 1200px;
-    margin: auto;
+html {
+  font-size: 15px;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px;
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 4rem;
 }
 
-.header nav #menu-close{
-    background: transparent;
-    border: none;
-    outline: none;
-    position: absolute;
-    right: 2.25rem;
-    top: 2.25rem;
-    z-index: 9999;
-    cursor: pointer;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
 }
 
-.header nav{
-    opacity: 0;
-    z-index: -999;
-    transition: all .3s ease-in-out;
+.header nav #menu-close {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  z-index: 99999;
+  cursor: pointer;
 }
 
-.header nav.open{
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 75vw;
-    background-color: white;
-    padding: 1.25rem;
-    opacity: 1;
-    z-index: 9999999999999;
+.header nav {
+  opacity: 0;
+  z-index: -999;
+  transition: all 0.3s ease-in-out;
 }
 
-.header nav ul{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.header nav.open {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 75vw;
+  background-color: white;
+  padding: 1.25rem;
+  opacity: 1;
+  z-index: 99999999999;
 }
 
-.header nav ul li{
-    margin: 1.5rem 0;
-    font-size: 16px;
-    cursor: pointer;
+.header nav ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.header nav ul li:hover{
-    color: hsl(5, 85%, 63%);
+.header nav ul li {
+  margin: 1.5rem 0;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.header .menu-button button{
-    background: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
+.header nav ul li:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.header .menu-button button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .showcase {
-    padding: 1.25rem;
-    padding-top: 0;
+  padding: 1.25rem;
+  padding-top: 0;
 }
 
-.showcase h1{
-    font-size: 2rem;
-    color: hsl(240, 100%, 5%);
-    margin: 1rem 0;
-    font-weight: 800;
+.showcase h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  margin: 1rem 0;
 }
 
-.showcase div:first-child article p{
-    margin-bottom: 1.25rem;
-    
+.showcase div:first-child article p {
+  margin-bottom: 1rem;
 }
 
-.showcase div:first-child article button{
-    background-color: hsl(5, 85%, 63%);
-    color: #fff;
-    padding: 16px 32px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    font-weight: bold;
-    transition: all .3s ease-in-out;
+.showcase div:first-child article button {
+  background-color: hsl(5, 85%, 63%);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.showcase div:first-child article button:hover{
-    background-color: hsl(240, 100%, 5%);
-    cursor: pointer;
+.showcase div:first-child article button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
 }
 
-.showcase > div:last-child{
-    background-color: hsl(240, 100%, 5%);
-    color: #fff;
-    margin-top: 2 rem;
-    padding: 1.25rem 1.25rem 0;
+.showcase > div:last-child {
+  background-color: hsl(240, 100%, 5%);
+  margin-top: 2rem;
+  padding: 1.25rem 1.25rem 0;
 }
 
-.showcase > div:last-child h2{
-    font-size: 42px;
-    color: hsl(35, 77%, 62%);
-    margin-bottom: 20px;
+.showcase > div:last-child h2 {
+  color: hsl(35, 77%, 62%);
 }
 
-.showcase > div:last-child article{
-    padding: 1.25rem 0;
+.showcase > div:last-child article {
+  padding: 1.25rem 0;
 }
 
 .showcase > div:last-child article:not(:last-child) {
-    border-bottom: 1px solid hsl(236, 13%, 42%);
+  border-bottom: 1px solid hsl(236, 13%, 42%);
 }
 
-.showcase > div:last-child h3{
-    margin-bottom: .5rem;
-    font-size: 26px;
+.showcase > div:last-child h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
 }
 
-.showcase > div:last-child h3:hover{
-    color: hsl(35, 77%, 62%);
-    cursor: pointer;
+.showcase > div:last-child h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
 }
 
-.showcase > div:last-child p{
-    color: hsl(233, 8%, 79%);
+.cards {
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
 }
 
-.showcase article button{
-    margin-bottom: 1.25rem;
+.cards article {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.cards{
-    padding: 1.25rem;
+.cards article img {
+  width: 150px;
+}
+
+.cards article span {
+  color: hsl(236, 13%, 42%);
+  font-weight: bold;
+  font-size: 2rem;
+  opacity: 75%;
+}
+
+.cards article h4 {
+  font-size: 1.25rem;
+  color: hsl(240, 100%, 5%);
+  margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .cards {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
 }
 
-.cards article{
+@media (min-width: 1024px) {
+  .header {
+    padding: 2rem 1.25rem;
+  }
+
+  .header nav {
+    opacity: 1;
+    z-index: auto;
+    width: 100%;
+  }
+
+  .header nav.open {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    z-index: auto;
+  }
+
+  .header nav #menu-close {
+    display: none;
+  }
+
+  .header nav ul {
+    position: relative;
+    top: 0;
     display: flex;
     align-items: center;
-    gap: 1.25rem;
-}
+    justify-content: flex-end;
+    gap: 2rem;
+    transform: translateY(0%);
+  }
 
-.cards article img{
-    width: 150px;
-}
+  .header nav ul li {
+    margin: 0;
+  }
 
-.cards article span{
-    color:hsl(236, 13%, 42%);
-    font-weight: bold;
-    font-size: 2rem;
-    opacity: 75%;
-}
+  .header .menu-button button {
+    display: none;
+  }
 
-.cards article h4{
-    font-size: 1.25rem;
-    color: hsl(240, 100%, 5%);
-    margin: 1rem 0;
-}
+  .showcase {
+    display: flex;
+    gap: 2rem;
+  }
 
-@media (min-width: 768px){
-    .cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 2rem;
-    }
-}
+  .showcase h1 {
+    font-size: 3rem;
+  }
 
-@media (min-width: 1024px){
-    .header{
-        padding: 2rem 1.25rem;
-    }
+  .showcase > div:first-child article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    place-items: center;
+    margin-top: 2rem;
+  }
 
-    .header nav{
-        opacity: 1;
-        z-index: auto;
-        width: 100%;
-    }
+  .showcase > div:last-child {
+    margin-top: 0;
+  }
 
-    .header nav.open{
-        position: relative;
-        right: 0;
-        width: auto;
-        background-color: transparent;
-        padding: 0;
-        z-index: auto;
-    }
-
-    .header nav #menu-close{
-        display: none;
-    }
-
-    .header nav ul{
-        position: relative;
-        top: 0;
-        transform: translateY(0%);
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 2rem;
-    }
-
-    .header nav ul li{
-        margin: 0;
-    }
-
-    .header .menu-button button{
-        display: none;
-    }
-
-    .showcase{
-        display: flex;
-        gap: 2rem;
-    }
-
-    .showcase > div:first-child article{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        place-items: center;
-    }
-
-    .showcase > div:last-child{
-        margin-top: 0;
-    }
-
-    .showcase p{
-        font-size: 16px;
-    }
-
-    .showcase h1{
-        font-size: 3.25rem;
-    }
-
-    .cards{
-        margin-top: 2rem;
-        grid-template-columns: repeat(3,1fr);
-    }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
